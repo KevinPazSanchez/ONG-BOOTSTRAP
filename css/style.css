@@ -1,74 +1,78 @@
-.carousel-item {
-	height: 100vh;
-	min-height: 300px;
-	background: no-repeat center center scroll;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
+/* Custom CSS */
+
+/* Navbar */
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    border-bottom: 2px solid #fff;
 }
+
+.active {
+    border-bottom: 2px solid #fff;
+}
+
+/* Carousel */
+
 .carousel-caption {
-	bottom: 270px;
+    padding-bottom: 12%;
 }
-.carousel-caption h5 {
-	font-size: 45px;
-	text-transform: uppercase;
-	letter-spacing: 2px;
-	margin-top: 25px;
+
+.carousel-caption h3 {
+    font-size: 42px;
+    font-weight: bold;
 }
+
 .carousel-caption p {
-	width: 75%;
-	margin: auto;
-	font-size: 18px;
-	line-height: 1.9;
-}
-.navbar-light .navbar-brand {
-	color: #fff;
-	font-size: 25px;
-	text-transform: uppercase;
-	font-weight: bold;
-	letter-spacing: 2px;
-}
-.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
-	color: #fff;
-}
-.navbar-light .navbar-nav .nav-link {
-	color: #fff;
-}
-.navbar-toggler {
-	background: #fff;
-}
-.navbar-nav {
-	text-align: center;
-}
-.nav-link {
-	padding: .2rem 1rem;
-}
-.nav-link.active, .nav-link:focus {
-	color: #fff;
-}
-.navbar-toggler {
-	padding: 1px 5px;
-	font-size: 18px;
-	line-height: 0.3;
-}
-.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
-	color: #fff;
-}
-/* Footer */
-
-#footer {
-    background:#333;
-    padding: 10px;
+    font-size: 24px;
+    color: white;
 }
 
-.cpt {
-    padding-top: 29px;
+.carousel-item.active {
+    border:none;
 }
 
-.ftaw i {
-    font-size: 50px;
+.carousel-inner {
+    min-height:300px;
+}
+
+/* Buttons */
+
+.btn-info {
+    background-color:#21ddfb;
+    padding: 1rem 4rem;
+    border:3px solid transparent;
+    width: 225px;
+}
+
+.btn-info:hover {
+    background-color:transparent;
+    border:3px solid #21ddfb;
     color: #21ddfb;
-    padding-top: 15px;
-    padding-right: 10px;
+}
+
+.btn-info:active {
+    background-color:transparent !important;
+    border:3px solid #21ddfb !important;
+    color: #21ddfb !important;
+}
+
+/* Menu */
+
+#menu {
+    padding: 10px 10px;
+}
+
+.card {
+    box-shadow: 2px 5px 20px #777;
+}
+
+.modal-content {
+    background:#21ddfb;
+}
+
+.mn {
+    color:#fff;
+}
+
+#about {
+	margin-top: 80px;
 }
