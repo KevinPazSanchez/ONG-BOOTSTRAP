@@ -42,7 +42,8 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <div class="navbar-nav ml-auto">
-                    <a class="nav-item nav-link mr-4" href="pagina-principal.html">Inicio<span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link mr-4" href="pagina-principal.html">Inicio<span
+                            class="sr-only">(current)</span></a>
                     <a class="nav-item nav-link mr-4" href="#">Nosotros</a>
                     <a class="nav-item nav-link mr-4" href="perros-en-adopcion.html">Perros</a>
                     <a class="nav-item nav-link mr-4" href="#">Gatos</a>
@@ -65,11 +66,11 @@
                 <input type="text" class="form-control" placeholder="Escribe tu nombre aqui" required="required">
             </div>
             <div class="form-group">
-                <label for="">Email</label>
-                <input type="email" class="form-control"  placeholder="Escribe tu email aqui">
+                <label for="">Email *</label>
+                <input type="email" class="form-control" placeholder="Escribe tu email aqui">
             </div>
             <div class="form-group">
-                <label for="">Tipo de Indentificación</label>
+                <label for="">Tipo de Documento *</label>
                 <select name="alimento" class="form-control" id="alimento">
                     <option selected>Seleccione...</option>
                     <option value="1">Rut</option>
@@ -77,15 +78,15 @@
                 </select>
             </div>
             <div class="form-group">
-                <label for="">Rut o Pasaporte</label>
+                <label for="">Número de Documento *</label>
                 <input type="text" class="form-control" placeholder="Escribe tu rut o pasaporte aqui">
             </div>
             <div class="form-group">
-                <label for="">Telefono</label>
+                <label for="">Telefono *</label>
                 <input type="number" class="form-control" placeholder="Escribe tu telefono aqui">
             </div>
             <div class="form-group">
-                <label for="">Ciudad</label>
+                <label for="">Ciudad *</label>
                 <input type="text" class="form-control" placeholder="Escribe tu ciudad aqui">
             </div>
             <div class="form-group">
@@ -97,35 +98,7 @@
                 <button type="reset" class="btn btn-danger">Limpiar</button>
             </div>
         </form>
-
-
-
-        <form action="/accounts/register/" method="post" role="form" class="form-horizontal">
-            <input type='hidden' name='csrfmiddlewaretoken' value='brGfMU16YyyG2QEcpLqhb3Zh8AvkYkJt' />
-            <div class="form-group required">
-               <label class="col-md-2 control-label">Username</label>
-               <div class="col-md-4">
-                 <input class="form-control" id="id_username" maxlength="30" name="username" placeholder="Username" required="required" title="" type="text" />
-               </div>
-            </div>
-            <div class="form-group required"><label class="col-md-2 control-label">E-mail</label><div class="col-md-4"><input class="form-control" id="id_email" name="email" placeholder="E-mail" required="required" title="" type="email" /></div></div>
-            <div class="form-group required"><label class="col-md-2 control-label">Password</label><div class="col-md-4"><input class="form-control" id="id_password1" name="password1" placeholder="Password" required="required" title="" type="password" /></div></div>
-            <div class="form-group required"><label class="col-md-2 control-label">Password (again)</label><div class="col-md-4"><input class="form-control" id="id_password2" name="password2" placeholder="Password (again)" required="required" title="" type="password" /></div></div>
-            <div class="form-group required"><label class="col-md-2 control-label">first name</label><div class="col-md-4"><input class="form-control" id="id_first_name" maxlength="30" name="first_name" placeholder="first name" required="required" title="" type="text" /></div></div>
-            <div class="form-group required"><label class="col-md-2 control-label">last name</label><div class="col-md-4"><input class="form-control" id="id_last_name" maxlength="30" name="last_name" placeholder="last name" required="required" title="" type="text" /></div></div>
-            <div class="form-group required"><label class="col-md-2 control-label">&#160;</label><div class="col-md-4"><div class="checkbox"><label><input class="" id="id_tos" name="tos" required="required" type="checkbox" /> I have read and agree to the Terms of Service</label></div></div></div>
-        
-            <div class="form-group">
-                <div class="col-sm-offset-2 col-sm-10">
-                   <button type="submit" class="btn btn-primary">
-                      <span class="glyphicon glyphicon-star"></span> Sign Me Up!
-                   </button>
-                </div>
-            </div>
-        </form>
     </div>
-    
-
     <br><br><br><br><br><br>
     <!-- Footer -->
     <footer class="bg-dark text-center text-white">
