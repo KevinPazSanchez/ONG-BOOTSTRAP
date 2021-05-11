@@ -26,8 +26,39 @@
         crossorigin="anonymous"></script>
     <script src="js/bootstrap.min.js"></script>
 
-</head>
+    <script>
+        $(document).ready(function () {
+            
+            $("button[type='submit']").click(function () {
+    
+                if ($("#inputNombre").val().trim().length == 0) {
+                    alert("El campo Nombre no puede ser vacío");
+                    event.preventDefault();
+                }
 
+                if ($("#inputEmail").val().trim().length == 0) {
+                    alert("El campo Email no puede ser vacío");
+                    event.preventDefault();
+                }               
+            });
+
+            $('#validate').click(function () {
+
+                var regex = /[\w-\.]{2,}@([\w-]{2,}\.)*([\w-]{2,}\.)[\w-]{2,4}/;
+
+                if (regex.test($('#inputEmail').val().trim())) {
+                    alert('Correo validado');
+
+                } else {
+                    alert('La direccón de correo no es válida');
+                }
+            });
+
+        });
+    </script>
+
+</head>
+ 
 <body>
     <!-- menu -->
     <div class="container-fluid bg-dark fixed-top">
@@ -62,20 +93,20 @@
         </div>
         <img src="imagenes/contacto.png" width="100" height="100" class="d-inline-block align-top" alt="">
         <br> <br>
-        <form class="border p-4">
+        <form class="border p-4" action="#" method="POST" id="formulario">
             <h6>* Obligatorio</h6>
             <br>
             <div class="form-group">
                 <label for="">Nombre *</label>
-                <input type="text" class="form-control" placeholder="Escribe tu nombre aqui" required="required">
+                <input type="text" id="inputNombre" class="form-control" placeholder="Escribe tu nombre aqui">
             </div>
             <div class="form-group">
                 <label for="">Email *</label>
-                <input type="email" class="form-control" placeholder="Escribe tu email aqui">
+                <input type="email" id="inputEmail" class="form-control" placeholder="Escribe tu email aqui">
             </div>
             <div class="form-group">
                 <label for="">Tipo de Documento *</label>
-                <select name="alimento" class="form-control" id="alimento">
+                <select name="documento" class="form-control" id="inputDocumento">
                     <option selected>Seleccione...</option>
                     <option value="1">Rut</option>
                     <option value="2">Pasaporte</option>
@@ -83,23 +114,23 @@
             </div>
             <div class="form-group">
                 <label for="">Número de Documento *</label>
-                <input type="text" class="form-control" placeholder="Escribe tu rut o pasaporte aqui">
+                <input type="text" id="inputNumero" class="form-control" placeholder="Escribe tu rut o pasaporte aqui">
             </div>
             <div class="form-group">
                 <label for="">Telefono</label>
-                <input type="number" class="form-control" placeholder="Escribe tu telefono aqui">
+                <input type="number" id="inputFono" class="form-control" placeholder="Escribe tu telefono aqui">
             </div>
             <div class="form-group">
                 <label for="">Ciudad *</label>
-                <input type="text" class="form-control" placeholder="Escribe tu ciudad aqui">
+                <input type="text" id="inputCity" class="form-control" placeholder="Escribe tu ciudad aqui">
             </div>
             <div class="form-group">
                 <label for="">Comentarios:</label>
-                <textarea class="form-control" id="" rows="7"></textarea>
+                <textarea class="form-control" id="inputComentario" rows="7"></textarea>
             </div>
             <div class="text-center">
-                <button type="submit" class="btn btn-danger">Enviar</button>
-                <button type="reset" class="btn btn-danger">Limpiar</button>
+                <button type="submit" id="validate" class="btn btn-danger">Enviar</button>
+                <button type="reset" class="btn btn-danger">Limpiar</button>                            
             </div>
         </form>
     </div>
